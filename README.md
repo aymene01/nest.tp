@@ -13,7 +13,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository using ssh:
 
    ```bash
-   git clone git@github.com:aymene01/aymene-delegation-service.git
+   git clone git@github.com:aymene01/nest.tp.git
    cd aymene-delegation-service
    ```
    

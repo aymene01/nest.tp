@@ -23,7 +23,7 @@ export class RateLimitMiddleware implements NestMiddleware {
   }
 }
 
-class RateLimiter {
+export class RateLimiter {
   private requestCountByIp: Map<string, number> = new Map();
   private readonly maxRequests: number;
   private readonly windowMs: number;

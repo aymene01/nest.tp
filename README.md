@@ -14,7 +14,7 @@ Before you begin, ensure you have met the following requirements:
 
    ```bash
    git clone git@github.com:aymene01/nest.tp.git
-   cd aymene-delegation-service
+   cd nest.tp
    ```
    
 2. Set up the environment:

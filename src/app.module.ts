@@ -3,9 +3,14 @@ import { UsersModule } from './users/users.module';
 import { AuthenticationModule } from './auth/auth.module';
 import { LoggerMiddleware, RateLimitMiddleware } from 'src/common/middlewares';
 import { JwtMiddleware } from './auth/middlewares/jwt.middleware';
+import { ConfigModule } from './common/config/config.module';
 
 @Module({
-  imports: [UsersModule, AuthenticationModule],
+  imports: [
+    UsersModule,
+    AuthenticationModule,
+    ConfigModule.register({ folder: '.env' }),
+  ],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {

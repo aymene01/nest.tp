@@ -9,7 +9,7 @@ import { ConfigModule } from './common/config/config.module';
   imports: [
     UsersModule,
     AuthenticationModule,
-    ConfigModule.register({ folder: '.env' }),
+    ConfigModule.register({ filename: '.env' }),
   ],
 })
 export class AppModule implements NestModule {

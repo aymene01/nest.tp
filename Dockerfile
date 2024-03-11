@@ -15,6 +15,7 @@ RUN pnpm install --frozen-lockfile
 
 # Copy the rest of the application files to the /app directory
 COPY . .
+COPY .env.sample .env
 
 # Expose port 3000 for access to your application
 EXPOSE 3000

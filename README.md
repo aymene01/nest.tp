@@ -32,3 +32,9 @@ Before you begin, ensure you have met the following requirements:
    pnpm prisma db push
    pnpm start:dev
    ```
+
+## If you want to test the rate limiter
+Run the script:
+   ```bash
+   scripts/rate-limit.sh
+   ```

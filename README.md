@@ -29,7 +29,6 @@ Before you begin, ensure you have met the following requirements:
    
 4. Run the following commands inside the container to initialize the database and start the API:
    ```bash
-   pnpm tsx scripts/env.ts
    pnpm prisma db push
-   pnpm dev
+   pnpm start:dev
    ```
